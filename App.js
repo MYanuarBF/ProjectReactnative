@@ -22,7 +22,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Image source={require('.//image/pic.jpg')} 
-         style={{width: 400, height: 400}} />
+         style={{width: 400, height: 500}} />
         <Text style={styles.instructions}>Nama : M Yanuar Budi F</Text>
         <Text style={styles.instructions}>Kelas : XI RPL 1</Text>
         <Text style={styles.instructions}>Absen : 24</Text>
