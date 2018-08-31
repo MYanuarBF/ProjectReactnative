@@ -7,25 +7,19 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Image} from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
+import {StyleSheet, Text, View, Image} from 'react-native';
+import Judul from './components/title';
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={require('.//image/pic.jpg')} 
-         style={{width: 400, height: 500}} />
+        <Judul/>
         <Text style={styles.instructions}>Nama : M Yanuar Budi F</Text>
         <Text style={styles.instructions}>Kelas : XI RPL 1</Text>
         <Text style={styles.instructions}>Absen : 24</Text>
+        <Image source={require('.//image/pic.jpg')} 
+         style={{width: 400, height: 400}} />
       </View>
     );
   }
