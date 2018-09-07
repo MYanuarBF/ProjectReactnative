@@ -9,12 +9,14 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import Judul from './components/title';
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Judul/>
+        <Judul type="Suparmin"/>
+        <Judul type="Login"/>
+        <Judul type="form"/>
         <Text style={styles.instructions}>Nama : M Yanuar Budi F</Text>
         <Text style={styles.instructions}>Kelas : XI RPL 1</Text>
         <Text style={styles.instructions}>Absen : 24</Text>
