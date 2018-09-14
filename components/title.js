@@ -14,8 +14,7 @@ const salon = {
 	Judul: {
 		color: '#f00',
 		fontSize: 50,
-		fontWeight: 'bold',
-		backgroundColor: '#0f0'
+		fontWeight: 'bold'
 	}
 }
 export default Judul; 
