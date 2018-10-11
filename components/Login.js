@@ -1,23 +1,28 @@
 import React,{Component} from 'react';
-import {Text,StyleSheet,Image,TextInput,View,TouchableOpacity} from 'react-native';
+import {Text,StyleSheet,Image,Button,TextInput,View,TouchableOpacity} from 'react-native';
 
 export default class Login extends Component{
   render(){
     return(
       <View style={style.container}>
-      <Image source={require('../image/logo.png')} style={{width: 40, height: 40}} />
+      <Image source={require('../image/logo.png')} style={{width: 40, height: 40}}/>
         <TextInput style={style.inputBox} 
                 underlineColorAndroid='rgba(0,0,0,0)' 
                 placeholder="E-mail" 
                 placeholderTextColor='#ffffff'/>
+
         <TextInput style={style.inputBox} 
                 underlineColorAndroid='rgba(0,0,0,0)' 
                 placeholder="Password" 
                 placeholderTextColor='#ffffff'/>
 
-        <TouchableOpacity style={style.button}>
-          <Text style={style.buttonText}>
-            Login
+        <TouchableOpacity style={style.button}
+                onPress={() => this.props.navigation.navigate('BiodataScreen')} title="Biodata"
+                title="Login"
+                color="#841584"
+                color="#808080">
+        <Text style={style.buttonText} >
+                Login
           </Text>
         </TouchableOpacity>
       </View>
